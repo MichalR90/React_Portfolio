@@ -1,6 +1,6 @@
 {
   "name": "my-portfolio",
-  "homepage": "https://https://github.com/MichalR90/React_Portfolio",
+  "homepage": "https://MichalR90.github.io/React_Portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.1.0",
