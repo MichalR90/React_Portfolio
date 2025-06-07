@@ -1,0 +1,130 @@
+.nav-bar {
+    font-weight: var(--fonte-weight);
+    top: 0;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 5rem;
+    position: sticky;
+    background: none;
+    z-index: 999;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.nav-bar-color {
+    font-weight: var(--fonte-weight);
+    top: 0;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 5rem;
+    position: sticky;
+    background: var(--nav-bar-liner-gradient);
+    z-index: 999;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+
+.nav-bar-active {
+    top: 0;
+    max-width: 760px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 5rem;
+    position: sticky;
+    background: var(--nav-bar-liner-gradient);
+    z-index: 999;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.nav-bar-logo-container {
+    display: flex;
+    justify-content: flex-start;
+    font-size: var(--font-size-title);
+    padding: 1rem;
+    background: linear-gradient(to right, var(--nav-bar-font-color), var(--color-hover));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-bar-hamburger {
+    display: none;
+    cursor: pointer;
+    filter: invert(1)
+}
+
+.nav-bar-close-icon {
+    cursor: pointer;
+    z-index: 999;
+}
+
+.nav-bar-list-container ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-end;
+    padding: 1rem;
+    color: var(--nav-bar-font-color);
+    border-radius: 7px;
+}
+
+.nav-bar-list-container ul li a:hover {
+    cursor: pointer;
+    background: linear-gradient(to bottom, var(--nav-bar-font-color), var(--color-hover));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: color 0.3s ease;
+
+}
+
+.nav-bar-list-container-active ul {
+    top: 0;
+    position: absolute;
+    list-style: none;
+    display: block;
+    left: 0%;
+    top: 100%;
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(to right, var(--nav-bar-background-color), var(--nav-bar-background-color-second));
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+
+}
+
+.nav-bar-list-container-active ul li {
+    margin: 2rem;
+    color: var(--nav-bar-font-color);
+}
+
+.nav-bar-list-container-active ul li a {
+    font-weight: var(--fonte-weigh);
+}
+
+.nav-bar-list-container-active ul li a:hover {
+    cursor: pointer;
+    background: linear-gradient(to bottom, var(--nav-bar-font-color), var(--color-hover));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: color 0.3s ease;
+}
+
+@media (max-width:760px) {
+    .nav-bar-list-container ul {
+        display: none;
+    }
+
+    .nav-bar-hamburger {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+
+}
