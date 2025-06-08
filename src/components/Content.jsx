@@ -4,6 +4,9 @@ import html from "../assets/icons8-html-96.svg";
 import css from "../assets/icons8-css.svg";
 import js from "../assets/icons8-javascript.svg";
 import react from "../assets/icons8-react.svg";
+import project1 from "../assets/projekt1.png";
+import project2 from "../assets/projekt2.png";
+import project3 from "../assets/projekt3.png";
 
 function Content({ activeSection }) {
   return (
@@ -96,11 +99,50 @@ function Content({ activeSection }) {
                 fetching, array and object operations, and basic asynchronous
                 programming.
               </span>
-
-              <span className="content-description-container-text-projects-section-first">
-                {" "}
+              <div className="content-description-container-text-projects-section-first">
                 <a href="https://github.com/MichalR90"> Click to my Github !</a>
-              </span>
+                <div className="content-description-container-project-list">
+                  <ul>
+                    <li>
+                      <span className="list-desctiption">
+                        My first portfolio.
+                      </span>
+                      <a href="https://michalr90.github.io/AboutMe//">
+                        <img src={project1} alt="projekt1"></img>
+                      </a>
+                      <span className="frameworks">CSS</span>
+                      <span className="frameworks">HTML</span>
+                      <span className="frameworks">JAVASCRIPT</span>
+                    </li>
+                    <li>
+                      <span className="list-desctiption">
+                        Calories calculator to calculate daily calorie
+                        requirement to lose or gain weight based on
+                        localstorage.
+                      </span>
+                      <a href="https://michalr90.github.io/Kalorie/">
+                        <img src={project2} alt="projekt2"></img>
+                      </a>
+                      <span className="frameworks">CSS</span>
+                      <span className="frameworks">HTML</span>
+                      <span className="frameworks">JAVASCRIPT</span>
+                    </li>
+                    <li>
+                      <span className="list-desctiption">
+                        Here is the recruitment task I received for the junior
+                        front-end developer position.
+                      </span>
+                      <a href="https://michalr90.github.io/TaskMichal/">
+                        <img src={project3} alt="projekt3"></img>
+                      </a>
+                      <span className="frameworks">CSS</span>
+                      <span className="frameworks">HTML</span>
+                      <span className="frameworks">JAVASCRIPT</span>
+                      <span className="frameworks">REACT.JS</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         )}

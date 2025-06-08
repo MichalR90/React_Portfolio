@@ -17,7 +17,11 @@ function Footer() {
           </ul>
         </div>
         <div className="foter-img-container">
-          <a href="https://www.facebook.com/profile.php?id=100001560446086&locale=pl_PL">
+          <a
+            href="https://www.facebook.com/profile.php?id=100001560446086"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={facebookIcon}></img>
           </a>
           <a href="https://github.com/MichalR90">

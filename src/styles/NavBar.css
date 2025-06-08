@@ -76,7 +76,7 @@
 
 .nav-bar-list-container ul li a:hover {
     cursor: pointer;
-    background: linear-gradient(to bottom, var(--nav-bar-font-color), var(--color-hover));
+    background: linear-gradient(to bottom, var(--nav-bar-color-hover), var(--color-hover));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: color 0.3s ease;
@@ -109,7 +109,7 @@
 
 .nav-bar-list-container-active ul li a:hover {
     cursor: pointer;
-    background: linear-gradient(to bottom, var(--nav-bar-font-color), var(--color-hover));
+    background: linear-gradient(to bottom, var(--nav-bar-color-hover), var(--color-hover));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: color 0.3s ease;
